@@ -11,12 +11,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
+/**
+ * The type Text analysis servlet.
+ */
 @WebServlet(name = "TextAnalysisServlet")
 public class TextAnalysisServlet extends HttpServlet {
 
   protected void doPost(HttpServletRequest request,
       HttpServletResponse response)
-      throws ServletException, IOException {
+      throws IOException {
 
       // get uri
       String urlPath = request.getPathInfo();

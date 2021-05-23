@@ -3,15 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
-  <servlet>
-    <servlet-name>SkierServlet</servlet-name>
-    <servlet-class>SkierServlet</servlet-class>
-  </servlet>
-
-  <servlet>
-    <servlet-name>nServlet</servlet-name>
-    <servlet-class>nServlet</servlet-class>
-  </servlet>
 
   <servlet>
     <servlet-name>TextAnalysisServlet</servlet-name>
@@ -19,17 +10,8 @@
   </servlet>
 
   <servlet-mapping>
-    <servlet-name>SkierServlet</servlet-name>
-    <url-pattern>/skiers/*/vertical</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
-    <servlet-name>nServlet</servlet-name>
-    <url-pattern>/skiers/*/seasons</url-pattern>
-  </servlet-mapping>
-
-  <servlet-mapping>
     <servlet-name>TextAnalysisServlet</servlet-name>
     <url-pattern>/textbody/*</url-pattern>
   </servlet-mapping>
+
 </web-app>
